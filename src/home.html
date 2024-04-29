@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OSENI-LUKMON</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="navstyles.css" />
+    <link rel="stylesheet" href="output.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Fraunces:opsz,wght@9..144,100;9..144,200;9..144,300;9..144,400;9..144,500;9..144,600;9..144,700;9..144,800;9..144,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
+  </head>
+  <body class="h-screen">
+    <!-- nav responsivess part -->
+    <div id="myNav" class="overlay">
+      <!-- Button to close the overlay navigation -->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+
+      <!-- Overlay content -->
+      <div class="overlay-content">
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Our Services</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Contact Us</a>
+      </div>
+    </div>
+    <!-- end of nav responsivess part -->
+    <!-- nav section -->
+    <nav
+      class="w-full flex justify-between items-center bg-white px-5 py-5 drop-shadow-lg sticky lg:px-16 lg:text-[20px]"
+    >
+      <!-- Logo image -->
+      <a href="./home.html"><img
+        src="./images/oseni-logo.png"
+        alt="oseni lukmon logo"
+        class="w-44 lg:w-60"
+      /></a>
+      <!-- desktop tab -->
+      <div
+        class="hidden lg:flex lg:gap-10 lg:justify-center lg:items-center lg:text-[#af4265] lg:font-medium lg:pr-10"
+      >
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Our Services</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Contact Us</a>
+      </div>
+      <!-- mobile hamburger -->
+      <div class="lg:hidden pr-4" onclick="openNav()">
+        <i class="fa-solid fa-bars text-[26px] text-[#af4265]"></i>
+      </div>
+      <!-- end of mobile hamburger -->
+    </nav>
+    <!-- End of nav section -->
+    <!-- header section -->
+    <header class="bg-headerbg bg-cover bg-center lg:w-full h-1/2 lg:h-3/4">
+      <!-- black bg on the bg-image -->
+      <div class="w-full h-full bg-black/50 text-white flex flex-col justify-center">
+        <!-- header h1 -->
+        <h1
+          class="text-[26px] font-bold leading-[32px] font-custom pt-12 pl-5 lg:text-[60px] lg:max-w-[900px] lg:leading-[60px]"
+        >
+          Comprehensive financial solutions for corperate needs.
+        </h1>
+        <!-- header p -->
+        <p class="max-w-[300px] text-[15px] font-medium leading-[20px] pt-2 pl-5 lg:max-w-[800px] lg:pt-5 lg:text-[20px]  ">
+          With over 15 years of experience helping business to find profound
+          solution
+        </p> 
+        <!-- div containing two button -->
+        <div class="flex gap-2 pt-5 pl-5 lg:gap-4 lg:pt-8">
+         <button
+          class="bg-[#af4265] px-2 py-2 rounded-md w-24 font-medium text-[18px] text-white hover:bg-white hover:text-[#af4265] lg:w-32 lg:text-[20px]" 
+        >
+          Our firm
+        </button>
+        <button
+          class="bg-[#af4265] px-1 py-2 rounded-md w-32 font-medium text-[18px] text-white hover:bg-white hover:text-[#af4265] lg:w-36 lg:text-[20px]"
+        >
+          Get in touch
+        </button>
+      </div>
+       <!-- end of div containing two button -->
+       <!-- end of black bg on the bg-image -->
+      </div>
+      
+    </header>
+    <!-- end of header section -->
+
+    <!-- what we do section -->
+    <section class="flex  flex-col justify-center items-center gap-5" >
+       <h2 class="text-[24px] font-medium font-custom text-[#af4265] pt-10 ">WHAT WE DO</h2>
+
+       <!-- first three what we do -->
+      <div class="flex flex-col justify-center items-center w-[90%] py-5 gap-5 text-center mx-auto lg:flex lg:flex-row">
+
+         <!-- accountacy -->
+        <div class="bg-white w-full justify-center items-center py-10 px-5 rounded-lg drop-shadow-2xl flex flex-col gap-4 hover:bg-[#af4265] text-gray-400 hover:text-white">
+        <i class="fa-solid fa-chart-line text-[#af4265] text-[40px] "></i>
+        <h2 class=" text-[20px] text-black font-semibold">ACCOUNTANCY SERVICE</h2>
+        <p class="">Elevate your company's financial management with our expert Accountancy Service, covering everything from bookkeeping to final accounts preparation. Trust in our compliance with Institute of Chartered Accountants of Nigeria standards for seamless financial operations.</p>
+        <button class="w-40 py-2 px-4 bg-[#af4265] text-white rounded-lg hover:bg-white hover:text-[#af4265] mt-5">
+          <a href="">LEARN MORE</a>
+        </button>
+       </div>
+        <!-- statutory audit -->
+        <div class="bg-white w-full justify-center items-center py-10 px-5 rounded-lg drop-shadow-2xl flex flex-col gap-4 hover:bg-[#af4265] text-gray-400 hover:text-white">
+        <i class="fa-solid fa-file-invoice text-[#af4265] text-[40px]"></i>
+        <h2 class=" text-[20px] text-black font-semibold">STATUTORY AUDIT</h2>
+        <p class="">Ensure regulatory compliance and financial transparency with our Statutory Audit Service. Our qualified team conducts thorough audits, providing accurate assessments and valuable insights to optimize your business performance.</p>
+        <button class="w-40 py-2 px-4 bg-[#af4265] text-white rounded-lg hover:bg-white hover:text-[#af4265] mt-5">
+          <a href="">LEARN MORE</a>
+        </button>
+        </div>
+        <!-- debt recovery unit -->
+        <div class="bg-white w-full justify-center items-center py-12 px-5 rounded-lg drop-shadow-2xl flex flex-col gap-4 hover:bg-[#af4265] text-gray-400 hover:text-white">
+        <i class="fa-solid fa-money-bill-transfer text-[#af4265] text-[40px]"></i>
+        <h2 class=" text-[20px] text-black font-semibold">DEBT RECOVERY </h2>
+        <p class="">Regain control of outstanding debts with our specialized Debt Recovery Unit. Our experienced team employs proven strategies to efficiently recover owed funds, empowering your business to thrive financially.</p>
+        <button class="w-40 py-2 px-4 bg-[#af4265] text-white rounded-lg hover:bg-white hover:text-[#af4265] mt-5">
+          <a href="">LEARN MORE</a>
+        </button>
+        </div>
+      </div>
+      <!-- end of first three what we do -->
+
+       <!-- 2nd three what we do -->
+      <div class="flex flex-col justify-center items-center w-[90%]  gap-5 text-center mx-auto lg:flex lg:flex-row">
+
+         <!-- taxation -->
+        <div class="bg-white w-full justify-center items-center py-10 px-5 rounded-lg drop-shadow-2xl flex flex-col gap-4 hover:bg-[#af4265] text-gray-400 hover:text-white">
+        <i class="fa-solid fa-chart-line text-[#af4265] text-[40px] "></i>
+        <h2 class=" text-[20px] text-black font-semibold">TAXATION</h2>
+        <p class="">Optimize your tax strategy with our tailored Taxation Service. Our experts navigate complex regulations to minimize liabilities and maximize savings, ensuring your business stays compliant and financially robust.</p>
+        <button class="w-40 py-2 px-4 bg-[#af4265] text-white rounded-lg hover:bg-white hover:text-[#af4265] mt-5">
+          <a href="">LEARN MORE</a>
+        </button>
+       </div>
+        <!-- statutory audit -->
+        <div class="bg-white w-full justify-center items-center py-10 px-5 rounded-lg drop-shadow-2xl flex flex-col gap-4 hover:bg-[#af4265] text-gray-400 hover:text-white">
+        <i class="fa-solid fa-file-invoice text-[#af4265] text-[40px]"></i>
+        <h2 class=" text-[20px] text-black font-semibold">STATUTORY AUDIT</h2>
+        <p class="">Ensure regulatory compliance and financial transparency with our Statutory Audit Service. Our qualified team conducts thorough audits, providing accurate assessments and valuable insights to optimize your business performance.</p>
+        <button class="w-40 py-2 px-4 bg-[#af4265] text-white rounded-lg hover:bg-white hover:text-[#af4265] mt-5">
+          <a href="">LEARN MORE</a>
+        </button>
+        </div>
+        <!-- debt recovery unit -->
+        <div class="bg-white w-full justify-center items-center py-12 px-5 rounded-lg drop-shadow-2xl flex flex-col gap-4 hover:bg-[#af4265] text-gray-400 hover:text-white">
+        <i class="fa-solid fa-money-bill-transfer text-[#af4265] text-[40px]"></i>
+        <h2 class=" text-[20px] text-black font-semibold">DEBT RECOVERY UNIT</h2>
+        <p class="">Regain control of outstanding debts with our specialized Debt Recovery Unit. Our experienced team employs proven strategies to efficiently recover owed funds, empowering your business to thrive financially.</p>
+        <button class="w-40 py-2 px-4 bg-[#af4265] text-white rounded-lg hover:bg-white hover:text-[#af4265] mt-5">
+          <a href="">LEARN MORE</a>
+        </button>
+        
+        </div>
+      </div>
+      <!-- end of 2nd three what we do -->
+
+      
+
+     
+
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html
