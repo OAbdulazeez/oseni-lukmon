@@ -611,8 +611,17 @@ video {
   width: 100%;
 }
 
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .max-w-\[300px\] {
   max-width: 300px;
+}
+
+.max-w-screen-lg {
+  max-width: 1024px;
 }
 
 .flex-col {
@@ -702,6 +711,10 @@ video {
 
 .bg-center {
   background-position: center;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
 }
 
 .px-1 {
@@ -948,6 +961,12 @@ video {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media not all and (min-width: 1024px) {
+  .max-lg\:flex {
+    display: flex;
+  }
 }
 
 @media (min-width: 1024px) {
