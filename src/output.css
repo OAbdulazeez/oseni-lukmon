@@ -558,8 +558,13 @@ video {
   position: fixed;
 }
 
+<<<<<<< Updated upstream
 .sticky {
   position: sticky;
+=======
+.z-30 {
+  z-index: 30;
+>>>>>>> Stashed changes
 }
 
 .z-30 {

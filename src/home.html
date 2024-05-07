@@ -37,7 +37,7 @@
     <!-- end of nav responsivess part -->
     <!-- nav section -->
     <nav
-      class="w-full flex justify-between items-center bg-white px-5 py-5 drop-shadow-lg sticky lg:px-16 lg:text-[20px]"
+      class="w-full flex justify-between items-center bg-white px-5 py-5 drop-shadow-lg fixed z-30 lg:px-16 lg:text-[20px]"
     >
       <!-- Logo image -->
       <a href="./home.html"><img
@@ -138,10 +138,35 @@
     <section class="flex  flex-col justify-center items-center gap-2" >
        <h2 class="text-[20px] font-medium font-custom text-[#af4265] pt-10 ">OUR PROJECTS</h2>
 
-      
 
     </section>
     <!-- end of what we do section -->
+
+    <!-- get a call back section -->
+    <section class="w-full flex flex-col justify-start items-start bg-gray-700 gap-10 my-5 px-5 py-10 lg:flex lg:flex-row lg:gap-20 lg:px-20 ">
+      <div class="lg:flex justify-left items-start lg:flex-col lg:w-1/3 ">
+         <h2 class="text-[22px] font-medium font-custom text-white py-10 text-center">GET A CALL BACK</h2>
+        <p class="text-justify pb-5 text-white ">If you need to speak to us about a general query fill in the form below and we will call you back within the same working day.</p>
+      </div>
+     
+        <div class="lg:flex lg:flex-col">
+          <label for="content" class="text-white">How can we help?</label>
+          <input name="content" type="text" placeholder="I would like to discuss" class="px-10 py-2 bg-white rounded-xl my-5">
+          <input type="text" placeholder="Your Email" class="px-10 py-2 bg-white rounded-xl my-5">
+        </div>
+        
+        
+        <div class="lg:flex lg:flex-col">
+          <input type="text" placeholder="Your phone number" class="px-10 py-2 bg-white rounded-xl my-5">
+            <button
+          class="bg-[#af4265] px-1 py-2 rounded-xl w-24 font-medium text-[12px] text-white mt-5 hover:bg-white hover:text-[#af4265] lg:w-36 lg:text-[16px]"
+          >
+            Submit Now
+          </button>
+        </div>
+       
+
+    </section>
 
 
     <script src="script.js"></script>
