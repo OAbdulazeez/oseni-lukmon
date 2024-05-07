@@ -3,9 +3,105 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OSENI-LUKMON</title>
     <link href="./output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="navstyles.css" />
+    <link rel="stylesheet" href="output.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Fraunces:opsz,wght@9..144,100;9..144,200;9..144,300;9..144,400;9..144,500;9..144,600;9..144,700;9..144,800;9..144,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
   </head>
-  <body>
+  <body class="h-screen">
+    <!-- nav responsivess part -->
+    <div id="myNav" class="overlay">
+      <!-- Button to close the overlay navigation -->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+
+      <!-- Overlay content -->
+      <div class="overlay-content">
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Our Services</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Contact Us</a>
+      </div>
+    </div>
+    <!-- end of nav responsivess part -->
+    <!-- nav section -->
+    <nav
+      class="w-full flex justify-between items-center bg-white px-5 py-5 drop-shadow-lg sticky lg:px-16 lg:text-[20px]"
+    >
+      <!-- Logo image -->
+      <a href="./home.html"
+        ><img
+          src="./images/oseni-logo.png"
+          alt="oseni lukmon logo"
+          class="w-44 lg:w-60"
+      /></a>
+      <!-- desktop tab -->
+      <div
+        class="hidden lg:flex lg:gap-10 lg:justify-center lg:items-center lg:text-[#af4265] lg:pr-10"
+      >
+        <a href="./home.html" class="hover:text-gray-400">Home</a>
+        <a href="#" class="hover:text-gray-400">About Us</a>
+        <a href="#" class="hover:text-gray-400">Our Services</a>
+        <a href="#" class="hover:text-gray-400">Portfolio</a>
+        <a href="#" class="hover:text-gray-400">Contact Us</a>
+      </div>
+      <!-- mobile hamburger -->
+      <div class="lg:hidden pr-4" onclick="openNav()">
+        <i class="fa-solid fa-bars text-[26px] text-[#af4265]"></i>
+      </div>
+      <!-- end of mobile hamburger -->
+    </nav>
+    <!-- End of nav section -->
+    <!-- header section -->
+    <header class="bg-headerbg bg-cover bg-center lg:w-full h-1/2 lg:h-3/4">
+      <!-- black bg on the bg-image -->
+      <div
+        class="w-full h-full bg-black/50 text-white flex flex-col justify-center"
+      >
+        <!-- header h1 -->
+        <h1
+          class="text-[26px] font-bold leading-[32px] font-custom pt-12 pl-5 lg:text-[60px] lg:max-w-[900px] lg:leading-[60px] lg:pl-10"
+        >
+          Comprehensive financial solutions for corperate needs.
+        </h1>
+        <!-- header p -->
+        <p
+          class="max-w-[300px] text-[15px] font-medium leading-[20px] pt-2 pl-5 lg:max-w-[800px] lg:pt-5 lg:text-[20px] lg:pl-10"
+        >
+          With over 15 years of experience helping business to find profound
+          solution
+        </p>
+        <!-- div containing two button -->
+        <div class="flex gap-2 pt-5 pl-5 lg:gap-4 lg:pt-8 lg:pl-10">
+          <button
+            class="bg-[#af4265] px-2 py-2 rounded-md w-24 font-medium text-[18px] text-white hover:bg-white hover:text-[#af4265] lg:w-32 lg:text-[20px]"
+          >
+            Our firm
+          </button>
+          <button
+            class="bg-[#af4265] px-1 py-2 rounded-md w-32 font-medium text-[18px] text-white hover:bg-white hover:text-[#af4265] lg:w-36 lg:text-[20px]"
+          >
+            Get in touch
+          </button>
+        </div>
+        <!-- end of div containing two button -->
+        <!-- end of black bg on the bg-image -->
+      </div>
+    </header>
+    <!-- end of header section -->
+
     <!--FIRST SECTION-->
     <section class="grid">
       <h1 class="text-3xl font-black text-center text-[#af4256]">
