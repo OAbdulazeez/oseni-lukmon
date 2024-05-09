@@ -5,69 +5,77 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>OSENI-LUKMON</title>
   <link href="./output.css" rel="stylesheet">
-  <link rel="stylesheet" href="navstyles.css" />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+<link rel="stylesheet" href="navstyles.css" />
+<link rel="stylesheet" href="output.css" />
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Fraunces:opsz,wght@9..144,100;9..144,200;9..144,300;9..144,400;9..144,500;9..144,600;9..144,700;9..144,800;9..144,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+</style>
+
 </head>
-<body class=""> 
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Fraunces:opsz,wght@9..144,100;9..144,200;9..144,300;9..144,400;9..144,500;9..144,600;9..144,700;9..144,800;9..144,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
-    </style>
-  </head>
-  <body class="h-screen">
-    <!-- nav responsivess part -->
-    <div id="myNav" class="overlay">
-      <!-- Button to close the overlay navigation -->
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-        >&times;</a
-      >
+<body class="h-screen">
+ 
 
-      <!-- Overlay content -->
-      <div class="overlay-content">
-        <a href="#">Home</a>
-        <a href="#">About Us</a>
-        <a href="#">Our Services</a>
-        <a href="#">Portfolio</a>
-        <a href="#">Contact Us</a>
-      </div>
-    </div>
-    <!-- end of nav responsivess part -->
-    <!-- nav section -->
-    <nav
-      class="w-full flex justify-between items-center bg-white px-5 py-5 drop-shadow-lg sticky lg:px-16 lg:text-[20px]"
+  <!-- nav responsivess part -->
+  <div id="myNav" class="overlay">
+    <!-- Button to close the overlay navigation -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+      >&times;</a
     >
-      <!-- Logo image -->
-      <a href="./home.html"><img
-        src="./images/oseni-logo.png"
-        alt="oseni lukmon logo"
-        class="w-44 lg:w-60"
-      /></a>
-      <!-- desktop tab -->
-      <div
-        class="hidden lg:flex lg:gap-10 lg:justify-center lg:items-center lg:text-[#af4265] lg:pr-10 "
-      >
-        <a href="./home.html" class="hover:text-gray-400">Home</a>
-        <a href="#" class="hover:text-gray-400">About Us</a>
-        <a href="#" class="hover:text-gray-400">Our Services</a>
-        <a href="#" class="hover:text-gray-400">Portfolio</a>
-        <a href="#" class="hover:text-gray-400">Contact Us</a>
-      </div>
-      <!-- mobile hamburger -->
-      <div class="lg:hidden pr-4" onclick="openNav()">
-        <i class="fa-solid fa-bars text-[26px] text-[#af4265]"></i>
-      </div>
-      <!-- end of mobile hamburger -->
-    </nav>
-    <!-- End of nav section -->
 
+    <!-- Overlay content -->
+    <div class="overlay-content">
+      <a href="#">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">Our Services</a>
+      <a href="#">Portfolio</a>
+      <a href="#">Contact Us</a>
+    </div>
+  </div>
+  <!-- end of nav responsivess part -->
+  <!-- nav section -->
+  <nav
+    class="w-full flex justify-between items-center bg-white px-5 py-5 drop-shadow-lg fixed z-30 lg:px-16 lg:text-[20px]"
+  >
+    <!-- Logo image -->
+    <a href="./home.html"><img
+      src="./images/oseni-logo.png"
+      alt="oseni lukmon logo"
+      class="w-44 lg:w-60"
+    /></a>
+    <!-- desktop tab -->
+    <div
+      class="hidden lg:flex lg:gap-10 lg:justify-center lg:items-center lg:text-[#af4265] lg:pr-10 "
+    >
+      <a href="./home.html" class="hover:text-gray-400">Home</a>
+      <a href="#" class="hover:text-gray-400">About Us</a>
+      <a href="#" class="hover:text-gray-400">Our Services</a>
+      <a href="#" class="hover:text-gray-400">Portfolio</a>
+      <a href="#" class="hover:text-gray-400">Contact Us</a>
+    </div>
+    <!-- mobile hamburger -->
+    <div class="lg:hidden pr-4" onclick="openNav()">
+      <i class="fa-solid fa-bars text-[26px] text-[#af4265]"></i>
+    </div>
+    <!-- end of mobile hamburger -->
+  </nav>
+  <!-- End of nav section -->
 
     <!--FIRST SECTION-->
   <img src="oseni-logo.png" alt="">
-  <h1 class="font-bold text-2xl text-center py-2 text-[#af4265] lg:text-5xl">What We Can Offer You</h1>
+  <h1 class="font-bold text-2xl text-center py-2 text-[#af4265] mt-28 lg:text-5xl">What We Can Offer You</h1>
       <!--parent section-->
      
-  <section class="lg:flex flex-row justify-between  pt-4 gap-8">
+  <section class="lg:flex flex-row justify-between pt-4 gap-8 lg:px-20">
 
       <!--parent div-->
-   <div class=" rounded-full hover:bg-asset-image[#AF4265] w-full hover:to-transparent[#af4265]">
+   <div class=" rounded-full hover:bg-asset-image[#AF4265] w-full mt-8 hover:to-transparent[#af4265]">
         <!--image div-->
     <img src="images/audit1.jpg" alt="" class="items-center rounded-t-md w-full">
         <!--heading of paragraph  div-->
@@ -83,20 +91,23 @@
     </div>
    </div>
     
-   <div class="rounded-full hover:text-[#AF4265] w-full ">
+   <div class="rounded-full hover:text-[#AF4265] w-full py-8">
     <img src="images/investigation3.jpg" alt="" class="items-center rounded-t-md w-full  ">
     <div class="bg-white shadow-md shadow-black rounded-b-md ">
     <h2 class="pt-5 text-center text-xl font-bold text-[#AF4265]">INVESTIGATION</h2>
-    <p class="text-center text-base pt-4 pb-6 px-10 text-[#0b0b0b] hover:text-[#AF4265]">    (a) Reconciliation of Accounts Involving inter-departments, inter-ministerial
-      and Accounts with overseas departments of firms.
-      (b) Valuation work associated with purchase of business, shares in partnership, 
-      etc.
-      (c) Prospective loans to third parties
-      <details class="font-semibold text-1xl text-center ">
-      (d) Prospective reports for new issue of share
-        We also go further than expressing opinion by making our audit to serve as
-        management   input   for   strategic   and   short   plans   for   overall   goal
-        accomplishment.</details></p>
+    <p class="text-center text-base pt-4 pb-6 px-10 text-[#0b0b0b] hover:text-[#AF4265]">    
+      <details class="font-semibold cursor-pointer text-center text-blue-950 pb-5 ">
+     <ul>
+      <li> Reconciliation of Accounts Involving inter-departments, inter-ministerial
+        and Accounts with overseas departments of firms.</li>
+        <li>Valuation work associated with purchase of business, shares in partnership, 
+          etc.</li> 
+        <li>Prospective loans to third parties</li>
+          <li>>Prospective reports for new issue of share
+          We also go further than expressing opinion by making our audit to serve as
+          management   input   for   strategic   and   short   plans   for   overall   goal
+          accomplishment.</li>
+     </ul></details></p>
     </div>
    </div>
 
@@ -123,7 +134,7 @@
 </section>
 
 <!-- section 2 -->
-<section class="lg:flex flex-row justify-between gap-8">
+<section class="lg:flex flex-row justify-between gap-8 lg:px-20">
   <div class="w-full py-8">
     <img src="images/Accountancy.jpg" alt="" class="items-center rounded-t-md  w-full">
     <div class="bg-white shadow-md shadow-black  rounded-b-md ">
@@ -142,7 +153,7 @@
   </div>
 
   <div class="w-full py-8">
-    <img src="images/SECRETARIAL1.jpg" alt="" class="items-center rounded-t-md w-[500px]">
+    <img src="images/SECRETARIAL1.jpg" alt="" class="items-center rounded-t-md w-full">
     <div class="bg-white shadow-md shadow-black rounded-b-md ">
     <h2 class="pt-5 text-center text-xl font-bold text-[#AF4265]">SECRETARIAL</h2>
     <p class="text-center text-base pt-4 pb-6 px-10 text-[#0b0b0b] hover:text-[#AF4265]">     Change   of   Company’s   name   or   Address,   Appointment   and
@@ -154,7 +165,7 @@
   </div>
 
   <div class="rounded-full w-full hover:text-[#AF4265] py-8">
-    <img src="images/loan sourcing.jpg" alt="" class="items-center rounded-t-md w-[500px]  ">
+    <img src="images/loan sourcing.jpg" alt="" class="items-center rounded-t-md w-full  ">
     <div class="bg-white shadow-md shadow-black rounded-b-md ">
     <h2 class="pt-5 text-center text-xl font-bold text-[#AF4265]">LOAN SOURCING/
       NEGOTIATION</h2>
@@ -173,7 +184,7 @@
   </section>
    
   <!-- section 3 -->
-  <section class="lg:flex flex-row justify-between gap-8">
+  <section class="lg:flex flex-row justify-between gap-8 lg:px-20">
    <div class="rounded-full hover:text-[#AF4265] w-full py-8">
     <img src="images/financials.jpg" alt="" class="items-center rounded-t-md w-full  ">
     <div class="bg-white shadow-md shadow-black rounded-b-md ">
@@ -216,6 +227,32 @@
    </div>
   </section>
  
+
+   <!-- get a call back section -->
+   <section class="w-full flex flex-col justify-start items-start bg-gray-700 gap-10 my-5 px-5 py-10 lg:flex lg:flex-row lg:gap-20 lg:px-20 ">
+    <div class="lg:flex justify-left items-start lg:flex-col lg:w-1/3 ">
+       <h2 class="text-[22px] font-medium font-custom text-white py-10 text-center">GET A CALL BACK</h2>
+      <p class="text-justify pb-5 text-white ">If you need to speak to us about a general query fill in the form below and we will call you back within the same working day.</p>
+    </div>
+   
+      <div class="lg:flex lg:flex-col">
+        <label for="content" class="text-white">How can we help?</label>
+        <input name="content" type="text" placeholder="I would like to discuss" class="px-10 py-2 bg-white rounded-xl my-5">
+        <input type="text" placeholder="Your Email" class="px-10 py-2 bg-white rounded-xl my-5">
+      </div>
+      
+      
+      <div class="lg:flex lg:flex-col">
+        <input type="text" placeholder="Your phone number" class="px-10 py-2 bg-white rounded-xl my-5">
+          <button
+        class="bg-[#af4265] px-1 py-2 rounded-xl w-24 font-medium text-[12px] text-white mt-5 hover:bg-white hover:text-[#af4265] lg:w-36 lg:text-[16px]"
+        >
+          Submit Now
+        </button>
+      </div>
+     
+
+  </section
   <!-- <p> -->
     <!-- RANGES OF PROFESSIONAL SERVICES
     1. AUDITS
@@ -304,5 +341,8 @@
     (e) Establishment optimum levels of readily realizable assets such as
     stock, Debtors and investment. 
   </p> -->
+
+  
+  <script src="script.js"></script>
 </body>
 </html>
