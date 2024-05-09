@@ -3,9 +3,68 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OSENI-LUKMON</title>
     <link href="./output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="navstyles.css" />
+    <link rel="stylesheet" href="output.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Fraunces:opsz,wght@9..144,100;9..144,200;9..144,300;9..144,400;9..144,500;9..144,600;9..144,700;9..144,800;9..144,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
   </head>
-  <body>
+  <body class="h-screen">
+    <!-- nav responsivess part -->
+    <div id="myNav" class="overlay">
+      <!-- Button to close the overlay navigation -->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+
+      <!-- Overlay content -->
+      <div class="overlay-content">
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Our Services</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Contact Us</a>
+      </div>
+    </div>
+    <!-- end of nav responsivess part -->
+    <!-- nav section -->
+    <nav
+      class="w-full flex justify-between items-center bg-white px-5 py-5 drop-shadow-lg sticky lg:px-16 lg:text-[20px]"
+    >
+      <!-- Logo image -->
+      <a href="./home.html"
+        ><img
+          src="./images/oseni-logo.png"
+          alt="oseni lukmon logo"
+          class="w-44 lg:w-60"
+      /></a>
+      <!-- desktop tab -->
+      <div
+        class="hidden lg:flex lg:gap-10 lg:justify-center lg:items-center lg:text-[#af4265] lg:pr-10"
+      >
+        <a href="./home.html" class="hover:text-gray-400">Home</a>
+        <a href="#" class="hover:text-gray-400">About Us</a>
+        <a href="#" class="hover:text-gray-400">Our Services</a>
+        <a href="#" class="hover:text-gray-400">Portfolio</a>
+        <a href="#" class="hover:text-gray-400">Contact Us</a>
+      </div>
+      <!-- mobile hamburger -->
+      <div class="lg:hidden pr-4" onclick="openNav()">
+        <i class="fa-solid fa-bars text-[26px] text-[#af4265]"></i>
+      </div>
+      <!-- end of mobile hamburger -->
+    </nav>
+    <!-- End of nav section -->
+
     <!--FIRST SECTION-->
     <section class="grid">
       <h1 class="text-3xl font-black text-center text-[#af4256]">
@@ -14,201 +73,237 @@
       <h2 class="font-medium text-gray-900 text-center m-3">
         SOME PROFESSIONAL ASSIGNMENTS CARRIED OUT BY OUR FIRM
       </h2>
-
-      <!--parent div-->
-      <div class="border-4 rounded-xl shadow-xl p-4 m-4 mb-10 lg:flex">
-        <!--image div-->
-        <div class="lg:w-[1000px]">
-          <img
-            src="images/lagos state revenue board.jpeg"
-            alt="images"
-            class="px-20 lg: mt-9"
-          />
-        </div>
-        <!--heading of paragraph  div-->
-        <div>
-          <h2 class="font-semibold text-2xl mb-4 text-[#af4256]">
-            Lagos State Revenue Board
-          </h2>
-          <!--paragraph div-->
-          <div class="text-green-950 mx-auto flex flex-col gap-3 lg:mr-5">
-            <p>
-              We have worked for Lagos State Internal Revenue Board as
-              Consultants for Accelerated Revenue Generation Programme from 2010
-              to date . The following Services were rendered:
-            </p>
-            <p>
-              (a) Ensuring that all the Provisions of Act 104 of 1993
-              particularly sections 67, 68, 69, 70, 71, 72, 80 and 81 are
-              adhered to by all registered employers.
-            </p>
-            <p>
-              (b) Educating Organization on how to comply with the relevant
-              sections of Personal Income tax Act 104 of 1993 including record
-              keeping and remittance.
-            </p>
-            <p>
-              (c) Carrying out the inspection of the relevant books and records
-              of the Organization in accordance with section 46 (4) of Act 1 of
-              1993; and
-            </p>
-            <p>
-              (d) Reporting the findings on the assignment, together with
-              appropriate recommendation to the state Board of Internal Revenue
-              for implementation Below are some of the companies we carried out
-              tax audit on behalf of Lagos
-            </p>
+      <div class="lg:flex px-20 gap-10">
+        <!--parent div-->
+        <div
+          class="border-4 rounded-xl shadow-xl p-4 m-4 mb-10 lg:flex w-[500px]"
+        >
+          <!--image div-->
+          <div class="lg:w-[1000px]">
+            <img
+              src="images/lagos state revenue board.jpeg"
+              alt="images"
+              class="px-20 lg: mt-9"
+            />
+            <div class="relative mb-3">
+              <h6 class="mb-0">
+                <button
+                  class="relative flex items-center w-full p-4 font-semibold text-left transition-all ease-in border-b border-solid cursor-pointer border-slate-100 text-slate-700 rounded-t-1 group text-dark-500"
+                  data-collapse-target="collapse-1"
+                >
+                  <span
+                    >Lagos State Revenue Board We have worked for Lagos State
+                    Internal Revenue Board as Consultants for Accelerated
+                    Revenue Generation Programme from 2010 to date . The
+                    following Services were rendered:</span
+                  >
+                  <i
+                    class="absolute right-0 pt-1 text-xs fa fa-plus group-open:opacity-0"
+                  ></i>
+                  <i
+                    class="absolute right-0 pt-1 text-xs opacity-0 fa fa-minus group-open:opacity-100"
+                  ></i>
+                </button>
+              </h6>
+              <div
+                data-collapse="collapse-1"
+                class="h-0 overflow-hidden transition-all duration-300 ease-in-out"
+              >
+                <div class="p-4 text-sm leading-normal text-blue-gray-500/80">
+                  (a) Ensuring that all the Provisions of Act 104 of 1993
+                  particularly sections 67, 68, 69, 70, 71, 72, 80 and 81 are
+                  adhered to by all registered employers. (b) Educating
+                  Organization on how to comply with the relevant sections of
+                  Personal Income tax Act 104 of 1993 including record keeping
+                  and remittance. (c) Carrying out the inspection of the
+                  relevant books and records of the Organization in accordance
+                  with section 46 (4) of Act 1 of 1993; and (d) Reporting the
+                  findings on the assignment, together with appropriate
+                  recommendation to the state Board of Internal Revenue for
+                  implementation Below are some of the companies we carried out
+                  tax audit on behalf of Lagos
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <!--end of lagos state revenue board-->
-      <!--parent div-->
-      <div class="border-4 rounded-xl shadow-xl p-4 m-4 lg:flex">
-        <!--image div-->
-        <div class="lg:w-[1000px]">
-          <img
-            src="images/ogun state revenue board.jpeg"
-            alt="images"
-            class="px-20 lg:mt-12 lg:ml-9"
-          />
+        <!--end of lagos state revenue board-->
+        <!--parent div-->
+        <div class="border-4 rounded-xl shadow-xl p-4 m-4 lg:flex w-[500px]">
+          <!--image div-->
+          <div class="lg:w-[1000px]">
+            <img
+              src="images/ogun state revenue board.jpeg"
+              alt="images"
+              class="px-20 lg:mt-12 lg:ml-9"
+            />
+            <div>
+              <div class="relative mb-3">
+                <h6 class="mb-0">
+                  <button
+                    class="relative flex items-center w-full p-4 font-semibold text-left transition-all ease-in border-b border-solid cursor-pointer border-slate-100 text-slate-700 rounded-t-1 group text-dark-500"
+                    data-collapse-target="collapse-1"
+                  >
+                    <span
+                      >Ogun State Revenue Board We have also worked for Ogun
+                      State Internal Revenue Board as Consultants for
+                      Accelerated Revenue Generation Programme from 2010 to
+                      date. The following Services were rendered :</span
+                    >
+                    <i
+                      class="absolute right-0 pt-1 text-xs fa fa-plus group-open:opacity-0"
+                    ></i>
+                    <i
+                      class="absolute right-0 pt-1 text-xs opacity-0 fa fa-minus group-open:opacity-100"
+                    ></i>
+                  </button>
+                </h6>
+                <div
+                  data-collapse="collapse-1"
+                  class="h-0 overflow-hidden transition-all duration-300 ease-in-out"
+                >
+                  <div class="p-4 text-sm leading-normal text-blue-gray-500/80">
+                    (a) Ensuring that all the Provisions of Act 104 of 1993
+                    particularly sections 67, 68, 69, 70, 71, 72, 80 and 81 are
+                    adhered to by all registered employers. (b) Educating
+                    Organization on how to comply with the relevant sections of
+                    Personal Income tax Act 104 of 1993 including record keeping
+                    and remittance. (c) Carrying out the inspection of the
+                    relevant books and records of the Organization in accordance
+                    with section 46 (4) of Act 1 of 1993; and (d) Reporting the
+                    findings on the assignment, together with appropriate
+                    recommendation to the state Board of Internal Revenue for
+                    implementation
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <!--end of image div-->
-        <div>
-          <h2 class="font-semibold text-2xl mb-4 text-[#af4256]">
-            Ogun State Revenue Board
-          </h2>
-          <div class="text-green-950 flex flex-col gap-3 lg:mr-10">
-            <p>
-              We have also worked for Ogun State Internal Revenue Board as
-              Consultants for Accelerated Revenue Generation Programme from 2010
-              to date. The following Services were rendered :
-            </p>
-            <p>
-              (a) Ensuring that all the Provisions of Act 104 of 1993
-              particularly sections 67, 68, 69, 70, 71, 72, 80 and 81 are
-              adhered to by all registered employers.
-            </p>
-            <p>
-              (b) Educating Organization on how to comply with the relevant
-              sections of Personal Income tax Act 104 of 1993 including record
-              keeping and remittance.
-            </p>
-            <p>
-              (c) Carrying out the inspection of the relevant books and records
-              of the Organization in accordance with section 46 (4) of Act 1 of
-              1993; and
-            </p>
-            <p>
-              (d) Reporting the findings on the assignment, together with
-              appropriate recommendation to the state Board of Internal Revenue
-              for implementation
-            </p>
-          </div>
-        </div>
       </div>
     </section>
     <!--SECOND SECTION-->
+    <h1 class="text-center text-4xl text-[#af4256] py-12 font-bold">
+      Completed Statutory Audits: Company List
+    </h1>
     <section
       class="grid lg:grid-cols-4 grid-cols-2 gap-6 px-12 py-9 bg-gray-200"
     >
       <div>
-        <img src="images/lastma.jpeg" alt="image" class="" />
+        <img src="images/lastma.jpeg" alt="image" class="rounded-3xl" />
         <p class="text-[12px] font-medium whitespace-nowrap">
           Lagos State Traffic Management Authority
         </p>
         <p class="text-[10px]">Government parastatals</p>
       </div>
       <div>
-        <img src="images/education lagos state.jpeg" alt="image" class="" />
+        <img
+          src="images/education lagos state.jpeg"
+          alt="image"
+          class="rounded-3xl"
+        />
         <p class="text-[12px] font-medium whitespace-nowrap">
           Lagos State Examinations Boards
         </p>
         <p class="text-[10px]">Government parastatals</p>
       </div>
       <div>
-        <img src="images/agriculture lagos.jpeg" alt="image" class="" />
+        <img
+          src="images/agriculture lagos.jpeg"
+          alt="image"
+          class="rounded-3xl"
+        />
         <p class="text-[12px] font-medium whitespace-nowrap">
           Lagos Agricultural Development Authority
         </p>
         <p class="text-[10px]">Government parastatals</p>
       </div>
       <div>
-        <img src="images/comreos omega.jpeg" alt="image" class="" />
+        <img src="images/comreos omega.jpeg" alt="image" class="rounded-3xl" />
         <p class="text-[12px] font-medium whitespace-nowrap">
           comreos Omega Nig Ltd
         </p>
         <p class="text-[10px]">General Marchandise</p>
       </div>
       <div>
-        <img src="images/chemplus.jpeg" alt="image" />
+        <img src="images/chemplus.jpeg" alt="image" class="rounded-3xl" />
         <p class="text-[12px] font-medium whitespace-nowrap">
           Chemplus Limited
         </p>
         <p class="text-[10px]">Trading</p>
       </div>
       <div>
-        <img src="images/lutech project.png" alt="image" class="" />
+        <img src="images/lutech project.png" alt="image" class="rounded-3xl" />
         <p class="text-[12px] font-medium whitespace-nowrap">
           Lutech Project Engineering Ltd
         </p>
         <p class="text-[10px]">Engineering Services</p>
       </div>
       <div>
-        <img src="images/telesuprecon.jpeg" alt="image" class="" />
+        <img src="images/telesuprecon.jpeg" alt="image" class="rounded-3xl" />
         <p class="text-[12px] font-medium whitespace-nowrap">
           Telesuprecon Nig Ltd
         </p>
         <p class="text-[10px]">Telecommunication/Gen Merch</p>
       </div>
       <div>
-        <img src="images/hamada.jpeg" alt="image" />
+        <img src="images/hamada.jpeg" alt="image" class="rounded-3xl" />
         <p class="text-[12px] font-medium whitespace-nowrap">
           Hamada Enterprises Ltd
         </p>
         <p class="text-[10px]">General Merchandise</p>
       </div>
       <div>
-        <img src="images/priority communications.jpeg" alt="image" class="" />
+        <img
+          src="images/priority communications.jpeg"
+          alt="image"
+          class="rounded-3xl"
+        />
         <p class="text-[12px] font-medium whitespace-nowrap">
           Priority communications Ltd
         </p>
         <p class="text-[10px]">Telecommunication/Gen Merch</p>
       </div>
       <div>
-        <img src="images/v-craft.jpeg" alt="image" />
+        <img src="images/v-craft.jpeg" alt="image" class="rounded-3xl" />
         <p class="text-[12px] font-medium whitespace-nowrap">
           V- Craft Nigeria Limited
         </p>
         <p class="text-[10px]">Boat Repair & Services</p>
       </div>
       <div>
-        <img src="images/anchor hmo.png" alt="image" />
+        <img src="images/anchor hmo.png" alt="image" class="rounded-3xl" />
         <p class="text-[12px] font-medium whitespace-nowrap">
           Anchor HMO International Limited
         </p>
         <p class="text-[10px]">Health Care</p>
       </div>
       <div>
-        <img src="images/aballat.jpeg" alt="image" />
+        <img src="images/aballat.jpeg" alt="image" class="rounded-3xl" />
         <p class="text-[12px] font-medium whitespace-nowrap">
           Abllat Nigeria Limited
         </p>
         <p class="text-[10px]">Herbaceutica</p>
       </div>
       <div>
-        <img src="images/jajo.png" alt="image" />
+        <img src="images/jajo.png" alt="image" class="rounded-3xl" />
         <p class="text-[12px] font-medium whitespace-nowrap">Jajo Hospital</p>
         <p class="text-[10px]">Health Care</p>
       </div>
       <div>
-        <img src="images/samuel agriculture.jpeg" alt="image" />
+        <img
+          src="images/samuel agriculture.jpeg"
+          alt="image"
+          class="rounded-3xl"
+        />
         <p class="text-[12px] font-medium whitespace-nowrap">
           Samsol Agro –Allied Nigeria Limited
         </p>
         <p class="text-[10px]">General Merchandise</p>
       </div>
       <div>
-        <img src="images/top notch ltd.jpeg" alt="image" class="" />
+        <img src="images/top notch ltd.jpeg" alt="image" class="rounded-3xl" />
         <p class="text-[12px] font-medium whitespace-nowrap">
           Notch Energy Limited
         </p>
@@ -250,4 +345,5 @@
       </div>
     </section>
   </body>
+  <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/collapse.js"></script>
 </html>
