@@ -41,7 +41,7 @@
 /* Position the close button (top right corner) */
 .overlay .closebtn {
   position: absolute;
-  top: 20px;
+  top: 40px;
   right: 45px;
   font-size: 60px;
 }
