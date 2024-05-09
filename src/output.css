@@ -607,6 +607,20 @@ video {
   height: 100vh;
 }
 
+.h-auto {
+  height: auto;
+}
+
+.h-min {
+  height: -moz-min-content;
+  height: min-content;
+}
+
+.h-max {
+  height: -moz-max-content;
+  height: max-content;
+}
+
 .w-24 {
   width: 6rem;
 }
@@ -623,8 +637,8 @@ video {
   width: 11rem;
 }
 
-.w-\[350px\] {
-  width: 350px;
+.w-\[500px\] {
+  width: 500px;
 }
 
 .w-\[90\%\] {
@@ -643,6 +657,10 @@ video {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.flex-row {
+  flex-direction: row;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -657,10 +675,6 @@ video {
 
 .justify-between {
   justify-content: space-between;
-}
-
-.gap-10 {
-  gap: 2.5rem;
 }
 
 .gap-2 {
@@ -776,11 +790,6 @@ video {
   padding-right: 3rem;
 }
 
-.px-16 {
-  padding-left: 4rem;
-  padding-right: 4rem;
-}
-
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -789,11 +798,6 @@ video {
 .px-20 {
   padding-left: 5rem;
   padding-right: 5rem;
-}
-
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 
 .px-5 {
@@ -821,19 +825,9 @@ video {
   padding-bottom: 0.5rem;
 }
 
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-}
-
-.py-6 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
 }
 
 .py-8 {
@@ -978,6 +972,10 @@ video {
   color: rgb(175 66 101 / var(--tw-text-opacity));
 }
 
+.text-\[\] {
+  color: ;
+}
+
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -1030,6 +1028,11 @@ video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+.hover\:border-t-\[\#af4265\]:hover {
+  --tw-border-opacity: 1;
+  border-top-color: rgb(175 66 101 / var(--tw-border-opacity));
+}
+
 .hover\:bg-\[\#af4265\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(175 66 101 / var(--tw-bg-opacity));
@@ -1038,6 +1041,10 @@ video {
 .hover\:bg-white:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.hover\:to-transparent:hover {
+  --tw-gradient-to: transparent var(--tw-gradient-to-position);
 }
 
 .hover\:text-\[\#AF4265\]:hover {

@@ -3,24 +3,78 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OSENI-LUKMON</title>
   <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="navstyles.css" />
 </head>
-<body class="py-6 px-16 bg-headerbg bg-cover w-full"> 
+<body class=""> 
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Fraunces:opsz,wght@9..144,100;9..144,200;9..144,300;9..144,400;9..144,500;9..144,600;9..144,700;9..144,800;9..144,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
+  </head>
+  <body class="h-screen">
+    <!-- nav responsivess part -->
+    <div id="myNav" class="overlay">
+      <!-- Button to close the overlay navigation -->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+
+      <!-- Overlay content -->
+      <div class="overlay-content">
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Our Services</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Contact Us</a>
+      </div>
+    </div>
+    <!-- end of nav responsivess part -->
+    <!-- nav section -->
+    <nav
+      class="w-full flex justify-between items-center bg-white px-5 py-5 drop-shadow-lg sticky lg:px-16 lg:text-[20px]"
+    >
+      <!-- Logo image -->
+      <a href="./home.html"><img
+        src="./images/oseni-logo.png"
+        alt="oseni lukmon logo"
+        class="w-44 lg:w-60"
+      /></a>
+      <!-- desktop tab -->
+      <div
+        class="hidden lg:flex lg:gap-10 lg:justify-center lg:items-center lg:text-[#af4265] lg:pr-10 "
+      >
+        <a href="./home.html" class="hover:text-gray-400">Home</a>
+        <a href="#" class="hover:text-gray-400">About Us</a>
+        <a href="#" class="hover:text-gray-400">Our Services</a>
+        <a href="#" class="hover:text-gray-400">Portfolio</a>
+        <a href="#" class="hover:text-gray-400">Contact Us</a>
+      </div>
+      <!-- mobile hamburger -->
+      <div class="lg:hidden pr-4" onclick="openNav()">
+        <i class="fa-solid fa-bars text-[26px] text-[#af4265]"></i>
+      </div>
+      <!-- end of mobile hamburger -->
+    </nav>
+    <!-- End of nav section -->
+
+
     <!--FIRST SECTION-->
   <img src="oseni-logo.png" alt="">
-  <h1 class="font-bold text-2xl text-center   lg:text-5xl">What We Can Offer You</h1>
+  <h1 class="font-bold text-2xl text-center py-2 text-[#af4265] lg:text-5xl">What We Can Offer You</h1>
       <!--parent section-->
-  <section class="lg:flex gap-10 pt-4  w-full">
+     
+  <section class="lg:flex flex-row justify-between  pt-4 gap-8">
 
       <!--parent div-->
-   <div class="rounded-full hover:bg-asset-image[#AF4265] w-full">
+   <div class=" rounded-full hover:bg-asset-image[#AF4265] w-full hover:to-transparent[#af4265]">
         <!--image div-->
-    <img src="images/audit1.jpg" alt="" class="items-center rounded-t-md w-[350px] ">
+    <img src="images/audit1.jpg" alt="" class="items-center rounded-t-md w-full">
         <!--heading of paragraph  div-->
-    <div class="bg-white shadow-md shadow-black w-[350px] rounded-b-md  ">
+    <div class="bg-white shadow-md shadow-black  rounded-b-md  ">
     <h2 class="pt-5 text-center text-xl font-bold text-[#AF4265]">AUDIT</h2>
           <!--paragraph-->
-    <p class="text-center text-base pt-4 pb-6 px-10 text-[#0b0b0b] hover:text-[#AF4265]">
+    <p class="text-center text-base py-8 pb-6 px-10 text-[#0b0b0b] hover:text-[#af4265]">
       The company conducts statutory audits mandated by the Companies and Allied Matters Decree 1990,
        as amended. These audits entail examining and expressing opinions, based on sampled evidence,
         regarding the accounts, significant estimates, and judgments made by directors in preparing 
@@ -29,41 +83,50 @@
     </div>
    </div>
     
-  
+   <div class="rounded-full hover:text-[#AF4265] w-full ">
+    <img src="images/investigation3.jpg" alt="" class="items-center rounded-t-md w-full  ">
+    <div class="bg-white shadow-md shadow-black rounded-b-md ">
+    <h2 class="pt-5 text-center text-xl font-bold text-[#AF4265]">INVESTIGATION</h2>
+    <p class="text-center text-base pt-4 pb-6 px-10 text-[#0b0b0b] hover:text-[#AF4265]">    (a) Reconciliation of Accounts Involving inter-departments, inter-ministerial
+      and Accounts with overseas departments of firms.
+      (b) Valuation work associated with purchase of business, shares in partnership, 
+      etc.
+      (c) Prospective loans to third parties
+      <details class="font-semibold text-1xl text-center ">
+      (d) Prospective reports for new issue of share
+        We also go further than expressing opinion by making our audit to serve as
+        management   input   for   strategic   and   short   plans   for   overall   goal
+        accomplishment.</details></p>
+    </div>
+   </div>
 
-  <div class="rounded-full py-4 w-full">
-    <img src="images/taxation.jpg" alt="" class="items-center rounded-t-md w-[350px]">
-    <div class="bg-white shadow-md shadow-black w-[350px] rounded-b-md ">
+  <div class="rounded-full w-full py-8">
+    <img src="images/taxation.jpg" alt="" class="items-center rounded-t-md w-full">
+    <div class="bg-white shadow-md shadow-black rounded-b-md ">
     <h2 class="pt-5 text-center text-xl font-bold text-[#AF4265]">TAXATION</h2>
     <p class="text-center text-base pt-4 pb-6 px-10 text-[#0b0b0b] hover:text-[#AF4265]">(a) Tax computations and returns to Federal Inland Revenue Service
       (b) Liasing with tax authorities (i.e. Federal Inland Revenue Services, State 
           Internal Revenue and Local Government Revenue Commission) on all
           matters of assessments and appeal.
-      (c) Dealing with Federal Inland Revenue Service (Vat Directorate on
+      <!-- (c) Dealing with Federal Inland Revenue Service (Vat Directorate on
         value  added tax issues).
-    <!-- (d) Tax planning and advising on the most beneficial method of organizing
+    (d) Tax planning and advising on the most beneficial method of organizing
         clients’ affairs.
     (e) Monitoring exercise of companies records and accounts for Government
         (Federal, State and Local) to show the degree of compliance with relevant
-        tax Laws.</p> -->
+        tax Laws. -->
+      </p> 
     </div>
   </div>
 
-  <div>
-    <img src="images/debt recovery.jpg" alt="" class="items-center rounded-t-md w-[350px] ">
-    <div class="bg-white shadow-md shadow-black w-[350px] rounded-b-md ">
-    <h2 class="pt-5 text-center text-xl font-bold text-[#AF4265]">debt-recovery</h2>
-    <p class="text-center text-base pt-4 pb-6 px-10 text-[#0b0b0b] hover:text-[#AF4265]">    We   undertake   the   recovery   of   debt   on   behalf   of   our   clients,
-    We also go into debt factoring where the amount involved is very big that would
-    worth the risk to be taken by our firm.</p>
-    </div>
-  </div>
+ 
 </section>
 
-<section class="lg:flex gap-8 py-8">
-  <div class="w-full ">
-    <img src="images/Accountancy.jpg" alt="" class="items-center rounded-t-md w-[350px]">
-    <div class="bg-white shadow-md shadow-black w-[350px] rounded-b-md ">
+<!-- section 2 -->
+<section class="lg:flex flex-row justify-between gap-8">
+  <div class="w-full py-8">
+    <img src="images/Accountancy.jpg" alt="" class="items-center rounded-t-md  w-full">
+    <div class="bg-white shadow-md shadow-black  rounded-b-md ">
     <h2 class="pt-5 text-center text-xl font-bold text-[#AF4265]">Accountancy</h2>
     <p class="text-center text-base pt-4 pb-6 px-10 text-[#0b0b0b] hover:text-[#AF4265]"> We have experienced staff that would be able to meet the 
       <br>accounting requirements of any client having regards to standard regulatory guideline and other provisions as 
@@ -78,9 +141,9 @@
     </div>
   </div>
 
-  <div class="w-full">
-    <img src="images/SECRETARIAL1.jpg" alt="" class="items-center rounded-t-md w-[350px]">
-    <div class="bg-white shadow-md shadow-black w-[350px] rounded-b-md ">
+  <div class="w-full py-8">
+    <img src="images/SECRETARIAL1.jpg" alt="" class="items-center rounded-t-md w-[500px]">
+    <div class="bg-white shadow-md shadow-black rounded-b-md ">
     <h2 class="pt-5 text-center text-xl font-bold text-[#AF4265]">SECRETARIAL</h2>
     <p class="text-center text-base pt-4 pb-6 px-10 text-[#0b0b0b] hover:text-[#AF4265]">     Change   of   Company’s   name   or   Address,   Appointment   and
       Resignation of the Company’s Director etc <details class="font-semibold text-1xl text-center"> (a)      We maintain statutory and minute books.
@@ -90,9 +153,9 @@
     </div>
   </div>
 
-  <div class="rounded-full hover:text-[#AF4265]">
-    <img src="images/loan sourcing.jpg" alt="" class="items-center rounded-t-md w-[350px]  ">
-    <div class="bg-white shadow-md shadow-black w-[350px] rounded-b-md ">
+  <div class="rounded-full w-full hover:text-[#AF4265] py-8">
+    <img src="images/loan sourcing.jpg" alt="" class="items-center rounded-t-md w-[500px]  ">
+    <div class="bg-white shadow-md shadow-black rounded-b-md ">
     <h2 class="pt-5 text-center text-xl font-bold text-[#AF4265]">LOAN SOURCING/
       NEGOTIATION</h2>
     <p class="text-center text-base pt-4 pb-6 px-10 text-[#0b0b0b] hover:text-[#AF4265]"> a) Preparation of necessary document such as;
@@ -109,10 +172,11 @@
    </div>
   </section>
    
-  <section class="lg:flex gap-2">
-   <div class="rounded-full hover:text-[#AF4265] w-full">
-    <img src="images/financials.jpg" alt="" class="items-center rounded-t-md w-[350px]  ">
-    <div class="bg-white shadow-md shadow-black w-[350px] rounded-b-md ">
+  <!-- section 3 -->
+  <section class="lg:flex flex-row justify-between gap-8">
+   <div class="rounded-full hover:text-[#AF4265] w-full py-8">
+    <img src="images/financials.jpg" alt="" class="items-center rounded-t-md w-full  ">
+    <div class="bg-white shadow-md shadow-black rounded-b-md ">
     <h2 class="pt-5 text-center text-xl font-bold text-[#AF4265]">FINANCIAL AND MANAGEMENT INFORMATION</h2>
     <p class="text-center text-base pt-4 pb-6 px-10 text-[#0b0b0b] hover:text-[#AF4265]">(a) Preparation of Cash Flow forecast
       (b) Project analysis Appraisal
@@ -125,26 +189,20 @@
     </div>
    </div>
    
-   <div class="rounded-full hover:text-[#AF4265]  px-4 w-full">
-    <img src="images/investigation2.jpg" alt="" class="items-center rounded-t-md w-[350px]  ">
-    <div class="bg-white shadow-md shadow-black w-[350px] rounded-b-md ">
-    <h2 class="pt-5 text-center text-xl font-bold text-[#AF4265]">INVESTIGATION</h2>
-    <p class="text-center text-base pt-4 pb-6 px-10 text-[#0b0b0b] hover:text-[#AF4265]">    (a) Reconciliation of Accounts Involving inter-departments, inter-ministerial
-      and Accounts with overseas departments of firms.
-      (b) Valuation work associated with purchase of business, shares in partnership, 
-      etc.
-      <details class="font-semibold text-1xl text-center ">
-        (c) Prospective loans to third parties
-      (d) Prospective reports for new issue of share
-        We also go further than expressing opinion by making our audit to serve as
-        management   input   for   strategic   and   short   plans   for   overall   goal
-        accomplishment.</details></p>
+   <div class="rounded-full w-full py-8">
+    <img src="images/debt recovery.jpg" alt="" class="items-center rounded-t-md w-full">
+    <div class="bg-white shadow-md shadow-black rounded-b-md ">
+    <h2 class="pt-5 text-center text-xl font-bold text-[#AF4265]">debt-recovery</h2>
+    <p class="text-center text-base pt-4 pb-6 px-10 text-[#0b0b0b] hover:text-[#AF4265]">    We   undertake   the   recovery   of   debt   on   behalf   of   our   clients,
+    We also go into debt factoring where the amount involved is very big that would
+    worth the risk to be taken by our firm.</p>
     </div>
-   </div>
+  </div>
+
    
-   <div class="rounded-full hover:text-[#AF4265] ">
-    <img src="images/liquid.jpg" alt="" class="items-center rounded-t-md w-[350px] ">
-    <div class="bg-white shadow-md shadow-black w-[350px] rounded-b-md ">
+   <div class="rounded-full hover:text-[#AF4265] py-8">
+    <img src="images/liquid.jpg" alt="" class="items-center rounded-t-md w-full ">
+    <div class="bg-white shadow-md shadow-black rounded-b-md ">
     <h2 class="pt-5 text-center text-xl font-bold text-[#AF4265]">LIQUIDATION, RECEIVERSHIP AND TRUSTS</h2>
     <p class="text-center text-base pt-4 pb-6 px-10 text-[#0b0b0b] hover:text-[#AF4265]"> (a) Settlement of creditors claim and shareholders from return on the assets.
       (b) Acting as receivers
