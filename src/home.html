@@ -31,7 +31,7 @@
         <a href="#">About Us</a>
         <a href="./our-services.html">Our Services</a>
         <a href="./projects.html">Portfolio</a>
-        <a href="#">Contact Us</a>
+        <a href="./contact.html">Contact Us</a>
       </div>
     </div>
     <!-- end of nav responsivess part -->
@@ -53,7 +53,7 @@
         <a href="#" class="hover:text-gray-400">About Us</a>
         <a href="./our-services.html" class="hover:text-gray-400">Our Services</a>
         <a href="./projects.html" class="hover:text-gray-400">Portfolio</a>
-        <a href="#" class="hover:text-gray-400">Contact Us</a>
+        <a href="./contact.html" class="hover:text-gray-400">Contact Us</a>
       </div>
       <!-- mobile hamburger -->
       <div class="lg:hidden pr-4" onclick="openNav()">
@@ -105,44 +105,62 @@
       <div class="flex flex-col justify-center items-center w-[90%] py-5 gap-5 text-center mx-auto lg:flex lg:flex-row">
 
          <!-- accountacy -->
-        <div class="bg-white w-full justify-center items-center py-10 px-5 rounded-lg drop-shadow-2xl flex flex-col gap-4 hover:bg-[#af4265] text-gray-400 hover:text-white">
-        <i class="fa-solid fa-chart-line text-[#af4265] text-[40px] "></i>
-        <h2 class=" text-[20px] text-black font-semibold">ACCOUNTANCY SERVICE</h2>
-        <p class="">Elevate your company's financial management with our expert Accountancy Service, covering everything from bookkeeping to final accounts preparation. Trust in our compliance with Institute of Chartered Accountants of Nigeria standards for seamless financial operations.</p>
+        <div class="bg-white w-full justify-center items-center py-10 px-5 rounded-lg drop-shadow-2xl flex flex-col gap-4 hover:bg-[#af4265] text-gray-400 group hover:text-white">
+        <i class="fa-solid fa-chart-line text-[#af4265] text-[40px] group-hover:text-white "></i>
+        <h2 class=" text-[20px] text-black font-semibold group-hover:text-white">ACCOUNTANCY SERVICE</h2>
+        <p class="group-hover:text-white">Elevate your company's financial management with our expert Accountancy Service, covering everything from bookkeeping to final accounts preparation. Trust in our compliance with Institute of Chartered Accountants of Nigeria standards for seamless financial operations.</p>
        
        </div>
         <!-- statutory audit -->
-        <div class="bg-white w-full justify-center items-center py-12 px-5 rounded-lg drop-shadow-2xl flex flex-col gap-4 hover:bg-[#af4265] text-gray-400 hover:text-white">
-        <i class="fa-solid fa-file-invoice text-[#af4265] text-[40px]"></i>
-        <h2 class=" text-[20px] text-black font-semibold">STATUTORY AUDIT</h2>
-        <p class="">Ensure regulatory compliance and financial transparency with our Statutory Audit Service. Our qualified team conducts thorough audits, providing accurate assessments and valuable insights to optimize your business performance.</p>
+        <div class="bg-white w-full justify-center items-center py-12 px-5 rounded-lg drop-shadow-2xl flex flex-col gap-4 hover:bg-[#af4265] text-gray-400 group hover:text-white">
+        <i class="fa-solid fa-file-invoice text-[#af4265] text-[40px] group-hover:text-white"></i>
+        <h2 class=" text-[20px] text-black font-semibold group-hover:text-white">STATUTORY AUDIT</h2>
+        <p class="group-hover:text-white">Ensure regulatory compliance and financial transparency with our Statutory Audit Service. Our qualified team conducts thorough audits, providing accurate assessments and valuable insights to optimize your business performance.</p>
         
         </div>
         <!-- debt recovery unit -->
-        <div class="bg-white w-full justify-center items-center py-12 px-5 rounded-lg drop-shadow-2xl flex flex-col gap-4 hover:bg-[#af4265] text-gray-400 hover:text-white">
-        <i class="fa-solid fa-money-bill-transfer text-[#af4265] text-[40px]"></i>
-        <h2 class=" text-[20px] text-black font-semibold">DEBT RECOVERY </h2>
-        <p class="">Regain control of outstanding debts with our specialized Debt Recovery Unit. Our experienced team employs proven strategies to efficiently recover owed funds, empowering your business to thrive financially.</p>
+        <div class="bg-white w-full justify-center items-center py-12 px-5 rounded-lg drop-shadow-2xl flex flex-col gap-4 hover:bg-[#af4265] text-gray-400 group hover:text-white">
+        <i class="fa-solid fa-money-bill-transfer text-[#af4265] text-[40px] group-hover:text-white"></i>
+        <h2 class=" text-[20px] text-black font-semibold group-hover:text-white">DEBT RECOVERY </h2>
+        <p class="group-hover:text-white">Regain control of outstanding debts with our specialized Debt Recovery Unit. Our experienced team employs proven strategies to efficiently recover owed funds, empowering your business to thrive financially.</p>
         </div>
         
       </div>
       <!-- end of first three what we do -->
       <button class="w-40 py-2 px-8 bg-[#af4265] text-white rounded-lg hover:bg-white hover:text-[#af4265] font-medium">
-          <a href="">VIEW ALL</a>
+          <a href="our-services.html">VIEW ALL</a>
         </button>
 
     </section>
     <!-- end of what we do section -->
 
     <!-- our project section -->
-    <section class="flex  flex-col justify-center items-center gap-2" >
+    <section class="flex flex-col justify-center items-center gap-2" >
        <h2 class="text-[20px] font-medium font-custom text-[#af4265] pt-10 ">OUR PROJECTS</h2>
-       <div class=" bg-ourprojectbg bg-contain bg-no-repeat bg-center  w-[80%]  lg:h-3/4 ">
-        <div class="w-full bg-black/0 py-40  hover:bg-black/60">
-          <p></p>
-        </div>
-  
+       <!-- image div container -->
+       <div class="w-full flex flex-col gap-4 items-center lg:flex-row justify-center ">
+        <!-- lagos state revenue image for statutory audit -->
+       <div class="flex flex-col justify-center items-center w-[90%]">
+        <img class="" src="./images/lagos_state_revenue_board.jpeg" alt="lagos state revenue board logo">
+        <p class="font-medium ">Lagos State Traffic Management Authority </p>
+        <a class="font-medium hover:text-[#af4265]" href="projects.html">Statutory Audit</a>
        </div>
+      <!--tax audit  -->
+       <div class="flex flex-col justify-center items-center w-[90%]">
+        <img class="" src="./images/NAIC-logo.jpg" alt="NAIC-logo">
+        <p class="font-medium ">Nigeria Agricultural Insurance Corporation </p>
+        <a class="font-medium hover:text-[#af4265]" href="projects.html">Tax Audit</a>
+       </div>
+       </div>
+       <!-- end of container -->
+       <!-- see more -->
+        <button
+          class="bg-[#af4265] px-1 py-2 rounded-xl w-24 font-medium text-[12px] text-white mt-5 hover:bg-white hover:text-[#af4265] lg:w-36 lg:text-[16px]"
+          >
+            <a href="./projects.html">See More</a>
+          </button>
+
+
        
 
     </section>
@@ -208,21 +226,19 @@
       <!-- ending part -->
       <div class="pl-12 py-5">
         <ul class="flex flex-col gap-2 font-medium text-white">
-          <li class="list-disc"><a href="./home.html">Home</a></li>
-          <li class="list-disc"><a href="">About us</a></li>
-          <li class="list-disc"><a href="./our-services.html">Our services</a></li>
-          <li class="list-disc"><a href="./portfolios.html">Portfolio</a></li>
-          <li class="list-disc"><a href="">Contact Us</a></li>
+          <li class="list-disc hover:text-[#af4265]"><a href="./home.html">Home</a></li>
+          <li class="list-disc hover:text-[#af4265]"><a href="">About us</a></li>
+          <li class="list-disc hover:text-[#af4265]"><a href="./our-services.html">Our services</a></li>
+          <li class="list-disc hover:text-[#af4265]"><a href="./portfolios.html">Portfolio</a></li>
+          <li class="list-disc hover:text-[#af4265]"><a href="./contact.html">Contact Us</a></li>
         </ul>
       </div>
        
     </footer>
 
      <!-- copyright -->
-        <div class="bg-gray-500 py-3">
-          <p class="font-medium text-white text-center ">Copyright © 2024 All Rights Reserved. Oseni Lukmon & co. Powered By Dervac</p>
-          
-
+        <div class="bg-white py-3">
+          <p class="font-medium text-gray-500 text-center ">Copyright © 2024 All Rights Reserved. Oseni Lukmon & co. Powered By Dervac</p>
         </div>
   
     <script src="script.js"></script>
