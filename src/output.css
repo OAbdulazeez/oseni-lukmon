@@ -658,12 +658,12 @@ video {
   margin-top: 1.25rem;
 }
 
-.mt-8 {
-  margin-top: 2rem;
-}
-
 .mt-9 {
   margin-top: 2.25rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
 }
 
 .flex {
@@ -684,6 +684,10 @@ video {
 
 .h-1\/2 {
   height: 50%;
+}
+
+.h-64 {
+  height: 16rem;
 }
 
 .h-8 {
