@@ -642,22 +642,6 @@ video {
   margin-bottom: 0.75rem;
 }
 
-.mt-28 {
-  margin-top: 7rem;
-}
-
-.mt-5 {
-  margin-top: 1.25rem;
-}
-
-.mt-8 {
-  margin-top: 2rem;
-}
-
-.mt-9 {
-  margin-top: 2.25rem;
-}
-
 .mb-5 {
   margin-bottom: 1.25rem;
 }
@@ -688,6 +672,22 @@ video {
 
 .mt-2 {
   margin-top: 0.5rem;
+}
+
+.mt-28 {
+  margin-top: 7rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.mt-9 {
+  margin-top: 2.25rem;
 }
 
 .flex {
@@ -738,8 +738,16 @@ video {
   width: 11rem;
 }
 
+.w-60 {
+  width: 15rem;
+}
+
 .w-8 {
   width: 2rem;
+}
+
+.w-80 {
+  width: 20rem;
 }
 
 .w-\[500px\] {
@@ -756,14 +764,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-60 {
-  width: 15rem;
-}
-
-.w-80 {
-  width: 20rem;
 }
 
 .max-w-\[300px\] {
@@ -850,6 +850,10 @@ video {
   white-space: nowrap;
 }
 
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
 .rounded-3xl {
   border-radius: 1.5rem;
 }
@@ -868,10 +872,6 @@ video {
 
 .rounded-xl {
   border-radius: 0.75rem;
-}
-
-.rounded-2xl {
-  border-radius: 1rem;
 }
 
 .rounded-b-md {
@@ -904,24 +904,24 @@ video {
   border-style: dashed;
 }
 
-.border-blue-950 {
-  --tw-border-opacity: 1;
-  border-color: rgb(23 37 84 / var(--tw-border-opacity));
-}
-
-.border-slate-100 {
-  --tw-border-opacity: 1;
-  border-color: rgb(241 245 249 / var(--tw-border-opacity));
-}
-
 .border-\[\#af4265\] {
   --tw-border-opacity: 1;
   border-color: rgb(175 66 101 / var(--tw-border-opacity));
 }
 
+.border-blue-950 {
+  --tw-border-opacity: 1;
+  border-color: rgb(23 37 84 / var(--tw-border-opacity));
+}
+
 .border-gray-300 {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
+}
+
+.border-slate-100 {
+  --tw-border-opacity: 1;
+  border-color: rgb(241 245 249 / var(--tw-border-opacity));
 }
 
 .bg-\[\#af4265\] {
@@ -966,6 +966,7 @@ video {
   background-image: url('/src/images/oseni-header-image.jpg');
 }
 
+<<<<<<< Updated upstream
 .bg-ourprojectbg {
   background-image: url('/src/images/lagos state revenue board.jpeg');
 }
@@ -974,6 +975,8 @@ video {
   background-size: contain;
 }
 
+=======
+>>>>>>> Stashed changes
 .bg-cover {
   background-size: cover;
 }
@@ -982,20 +985,16 @@ video {
   background-position: center;
 }
 
-.bg-no-repeat {
-  background-repeat: no-repeat;
-}
-
-.p-4 {
-  padding: 1rem;
-}
-
 .p-10 {
   padding: 2.5rem;
 }
 
 .p-3 {
   padding: 0.75rem;
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .px-1 {
@@ -1048,6 +1047,11 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -1083,11 +1087,14 @@ video {
   padding-bottom: 2.25rem;
 }
 
+<<<<<<< Updated upstream
 .py-24 {
   padding-top: 6rem;
   padding-bottom: 6rem;
 }
 
+=======
+>>>>>>> Stashed changes
 .pb-2 {
   padding-bottom: 0.5rem;
 }
@@ -1282,6 +1289,11 @@ video {
   color: rgb(156 163 175 / var(--tw-text-opacity));
 }
 
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
 .text-gray-600 {
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
@@ -1300,11 +1312,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-gray-500 {
-  --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
 .opacity-0 {
@@ -1413,14 +1420,6 @@ video {
     margin-right: 20rem;
   }
 
-  .lg\:ml-9 {
-    margin-left: 2.25rem;
-  }
-
-  .lg\:mt-12 {
-    margin-top: 3rem;
-  }
-
   .lg\:mb-12 {
     margin-bottom: 3rem;
   }
@@ -1433,8 +1432,16 @@ video {
     margin-left: 1.25rem;
   }
 
+  .lg\:ml-9 {
+    margin-left: 2.25rem;
+  }
+
   .lg\:mt-10 {
     margin-top: 2.5rem;
+  }
+
+  .lg\:mt-12 {
+    margin-top: 3rem;
   }
 
   .lg\:mt-5 {
@@ -1543,14 +1550,14 @@ video {
     padding-right: 5rem;
   }
 
-  .lg\:py-12 {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-
   .lg\:px-24 {
     padding-left: 6rem;
     padding-right: 6rem;
+  }
+
+  .lg\:py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 
   .lg\:py-24 {

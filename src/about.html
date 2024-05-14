@@ -1,18 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./output.css" />
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="/images/TLIF.png" size="32x32" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Almendra+SC&display=swap" rel="stylesheet">
-        <title>Oseni Lukmon & Co.</title>
-</head>
-<body>
-     <link
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oseni Lukmon & Co.</title>
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
       integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
@@ -32,7 +24,8 @@
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
         >&times;</a
       >
-       <!-- Overlay content -->
+
+      <!-- Overlay content -->
       <div class="overlay-content">
         <a href="./home.html">Home</a>
         <a href="#">About Us</a>
@@ -47,20 +40,25 @@
       class="w-full flex justify-between items-center bg-white px-5 py-5 drop-shadow-lg fixed z-30 lg:px-16 lg:text-[20px]"
     >
       <!-- Logo image -->
-      <a href="./home.html"><img
-        src="./images/oseni-logo.png"
-        alt="oseni lukmon logo"
-        class="w-44 lg:w-60"
+      <a href="./home.html"
+        ><img
+          src="./images/oseni-logo.png"
+          alt="oseni lukmon logo"
+          class="w-44 lg:w-60"
       /></a>
-       <!-- desktop tab -->
+      <!-- desktop tab -->
       <div
-        class="hidden lg:flex lg:gap-10 lg:justify-center lg:items-center lg:text-[#af4265] lg:pr-10 "
+        class="hidden lg:flex lg:gap-10 lg:justify-center lg:items-center lg:text-[#af4265] lg:pr-10"
       >
-        <a href="./home.html" class="hover:text-gray-400">Home</a>
+        <a href="./home.html" class="text-gray-400 hover:text-[#af4265]"
+          >Home</a
+        >
         <a href="#" class="hover:text-gray-400">About Us</a>
-        <a href="./our-services.html" class="hover:text-gray-400">Our Services</a>
+        <a href="./our-services.html" class="hover:text-gray-400"
+          >Our Services</a
+        >
         <a href="./projects.html" class="hover:text-gray-400">Portfolio</a>
-        <a href="./contact.html" class="text-gray-400 hover:text-[#af4265]">Contact Us</a>
+        <a href="./contact.html" class="hover:text-gray-400">Contact Us</a>
       </div>
       <!-- mobile hamburger -->
       <div class="lg:hidden pr-4" onclick="openNav()">
@@ -69,61 +67,51 @@
       <!-- end of mobile hamburger -->
     </nav>
     <!-- End of nav section -->
-      <section class="bg-hero-pattern lg:flex lg:justify-evenly py-24">
 
-        <div>
-          <h1 class="text-3xl text-[#af4265]font-semibold lg:text-left lg:ml-5 text-center py-5">Contact </h1>
-          <p class="text-xl ml-5 mb-3">Address </p>
-          <p class="ml-5 mb-3">65, Shipeolu Street, Palmgrove, Lagos. </p>
-          <p class="text-xl ml-5 mb-3" >Contact </p>
-          <p class="ml-5 mb-3"> +234-8035611060, +234-8058319984</p>
-          <p class="text-xl ml-5 mb-3" >Email </p>
-          <p class="ml-5 mb-3"> oseni.lukmon@yahoo.com</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <!-- get a call back section -->
+    <section class="w-full flex flex-col justify-start items-start bg-gray-500 gap-10 mt-5 px-5 py-10 lg:flex lg:flex-row lg:gap-20 lg:px-20 lg:justify-center lg:items-center  ">
+      <div class="lg:flex justify-left items-start lg:flex-col lg:w-1/3 ">
+         <h2 class="text-[22px] font-medium font-custom text-white py-10 text-center">GET A CALL BACK</h2>
+        <p class="text-justify pb-2 text-white ">If you need to speak to us about a general query fill in the form below and we will call you back within the same working day.</p>
+      </div>
+     
+        <div class="lg:flex lg:flex-col">
+          <label for="content" class="text-white">How can we help?</label>
+          <input name="content" type="text" placeholder="I would like to discuss" class="px-10 py-2 bg-white rounded-xl my-5">
+          <input type="text" placeholder="Your Email" class="px-10 py-2 bg-white rounded-xl mt-5">
         </div>
+        
+        
+        <div class="lg:flex lg:flex-col">
+          <input type="text" placeholder="Your phone number" class="px-10 py-2 bg-white rounded-xl">
+            <button
+          class="bg-[#af4265] px-1 py-2 rounded-xl w-24 font-medium text-[12px] text-white mt-5 hover:bg-white hover:text-[#af4265] lg:w-36 lg:text-[16px]"
+          >
+            Submit Now
+          </button>
+        </div>
+    </section>
+    <!-- end of get a call back section -->
 
-        <section class=" lg:grid-cols-none">
 
-          <div class="grid lg:hidden">
-            <img src="../images/ai-zin.jpeg" alt="An image here" class="w-80 lg:96 mt-10 rounded-xl mx-auto mb-10">
-          </div>
-  
-          <div class="mt-10 lg:flex mx-auto">
+    <!-- start of footer session -->
 
-            <div>
-              <label class="ml-5">Name :</label>
-            <input type="text"  class="p-3 rounded-lg border-2 border-[#af4265] bg-white lg:mt-10  w-60 ml-6">
-            <br>
-    
-            <label class="ml-5">Email :</label>
-            <input type="text"  class="p-3 rounded-lg border-2 border-[#af4265] bg-white w-60 ml-8 mt-10">
-            <br>
-    
-            <label class="ml-1">Phone No :</label>
-            <input type="text"  class="p-3 rounded-lg border-2 border-[#af4265] bg-white mt-10 w-60 ml-6 ">
-            <br>
-
-            </div>
-
-            <div class="">
-              <label class="ml-5">Message :</label>
-              <input type="text"  class="p-10 lg:py-24 mb-5 rounded-lg border-2 border-[#af4265] bg-white w-60 ml-6 mt-10 ">
-            </div>
-    
-          </div>
-          <button class="bg-[#af4265] text-white rounded-2xl lg:mt-5 mt-2 border-2 border-gray-300  text-xl px-20 py-3 mb-5 lg:px-24 lg:mb-12 ml-28 lg:ml-24"><a href="#">Join Now</a></button>
-        </section>
-<!-- Inner section ends here -->
-
-      </section>
-
-      <section class="w-full">
-        <iframe class="w-full"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.3143881248448!2d3.3785404740456415!3d6.4818094236483885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b7fd941dfd7%3A0xa6fb6e6235d343fe!2s24%20Apapa%20Rd%2C%20Ebute%20Metta
-        %2C%20Lagos%20101245%2C%20Lagos!5e0!3m2!1sen!2sng!4v1715176606798!5m2!1sen!2sng" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </section>
-
-      <!-- start of footer session -->
-
-    <footer class="bg-gray-500 w-full mt-5 px-5 py-5 lg:flex lg:flex-row lg:justify-center lg:items-center gap-12">
+    <footer class="bg-gray-500 w-full px-5 py-5 lg:flex lg:flex-row lg:justify-center lg:items-center gap-12">
       <!-- contact div -->
       <div class="flex flex-col gap-3 ">
           <!-- gmail part -->
@@ -146,7 +134,7 @@
         <div class="flex justify-start items-center gap-2">
           <!-- circle box -->
           <div class="rounded-full bg-white text-[#af4265] w-8 h-8 flex justify-center items-center "> <i<i class="fa-solid fa-location-dot"></i> </div>
-    <!-- address text -->
+          <!-- address text -->
           <p class="text-white">65, Shipeolu Street, Palmgrove, Lagos.</p>
         </div>
       </div>
@@ -164,13 +152,12 @@
       </div>
        
     </footer>
-      <!-- copyright -->
+
+     <!-- copyright -->
         <div class="bg-white py-3">
           <p class="font-medium text-gray-500 text-center ">Copyright © 2024 All Rights Reserved. Oseni Lukmon & co. Powered By Dervac</p>
         </div>
-  <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/collapse.js"></script>
-    <script src="./script.js"></script>
-
-      
-</body>
+  
+    <script src="script.js"></script>
+  </body>
 </html>
