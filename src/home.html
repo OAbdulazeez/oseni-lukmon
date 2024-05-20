@@ -99,7 +99,7 @@
 
     <!-- what we do section -->
     <section class="flex  flex-col justify-center items-center gap-2 bg-gray-50 py-10" >
-       <h2 class="text-[20px] font-medium font-custom text-[#af4265] pt-10 ">WHAT WE DO</h2>
+       <h2 class="text-[20px] font-medium font-custom text-[#af4265] pt-3 ">WHAT WE DO</h2>
 
        <!-- first three what we do -->
       <div class="flex flex-col justify-center items-center w-[90%] py-5 gap-5 text-center mx-auto lg:flex lg:flex-row">
@@ -135,22 +135,36 @@
     <!-- end of what we do section -->
 
     <!-- our project section -->
-    <section class="flex flex-col justify-center items-center gap-2" >
+    <section class="flex flex-col justify-center items-center gap-2 lg:px-2" >
        <h2 class="text-[20px] font-medium font-custom text-[#af4265] pt-10 ">OUR PROJECTS</h2>
        <!-- image div container -->
-       <div class="w-full flex flex-col gap-4 items-center lg:flex-row justify-center ">
+       <div class="w-full flex flex-col  items-center lg:flex-row justify-around ">
         <!-- lagos state revenue image for statutory audit -->
        <div class="flex flex-col justify-center items-center w-[90%]">
-        <img class="" src="./images/lagos_state_revenue_board.jpeg" alt="lagos state revenue board logo">
+        <img class="w-[200px] h-[200px]" src="./images/lagos_state_revenue_board.jpeg" alt="lagos state revenue board logo">
         <p class="font-medium ">Lagos State Traffic Management Authority </p>
         <a class="font-medium hover:text-[#af4265]" href="projects.html">Statutory Audit</a>
        </div>
       <!--tax audit  -->
        <div class="flex flex-col justify-center items-center w-[90%]">
-        <img class="" src="./images/NAIC-logo.jpg" alt="NAIC-logo">
+        <img class="w-[200px] h-[200px]" src="./images/NAIC-logo.jpg" alt="NAIC-logo">
         <p class="font-medium ">Nigeria Agricultural Insurance Corporation </p>
         <a class="font-medium hover:text-[#af4265]" href="projects.html">Tax Audit</a>
        </div>
+       <!-- lutech -->
+        <div class="flex flex-col justify-center items-center w-[90%]">
+        <img class="w-[200px] h-[200px]" src="./images/lutech.jpeg" alt="Lutech logo">
+        <p class="font-medium -mt-5 ">Lutech Project Engineering Ltd. </p>
+        <a class="font-medium hover:text-[#af4265] " href="projects.html">Statutory Audit</a>
+       </div>
+       <!-- flash oil -->
+        <div class="flex flex-col justify-center items-center w-[90%]">
+        <img class="w-[200px] h-[200px]" src="./images/flash-oil-logo.jpeg" alt="flash oil logo">
+        <p class="font-medium -mt-5 "> Flash Oil & Gas Limited </p>
+        <a class="font-medium hover:text-[#af4265] " href="projects.html">Tax Audit</a>
+       </div>
+
+
        </div>
        <!-- end of container -->
        <!-- see more -->
@@ -194,9 +208,9 @@
 
     <!-- start of footer session -->
 
-    <footer class="bg-gray-500 w-full px-5 py-5 lg:flex lg:flex-row lg:justify-center lg:items-center gap-12">
+    <footer class="bg-black w-full px-5 py-5 lg:flex lg:flex-col lg:justify-center lg:items-center gap-12">
       <!-- contact div -->
-      <div class="flex flex-col gap-3 ">
+      <div class="flex flex-col gap-10 lg:flex-row">
           <!-- gmail part -->
         <div class="flex justify-start items-center gap-2">
           <!-- circle box -->
@@ -223,22 +237,50 @@
       </div>
       <!-- end of contact div -->
 
-      <!-- ending part -->
-      <div class="pl-12 py-5">
-        <ul class="flex flex-col gap-2 font-medium text-white">
-          <li class="list-disc hover:text-[#af4265]"><a href="./home.html">Home</a></li>
-          <li class="list-disc hover:text-[#af4265]"><a href="">About us</a></li>
-          <li class="list-disc hover:text-[#af4265]"><a href="./our-services.html">Our services</a></li>
-          <li class="list-disc hover:text-[#af4265]"><a href="./portfolios.html">Portfolio</a></li>
-          <li class="list-disc hover:text-[#af4265]"><a href="./contact.html">Contact Us</a></li>
-        </ul>
+      <!-- container -->
+      <div class="lg:flex lg:justify-center lg:gap-10 lg:items-center lg:px-10 w-full">
+        <div class="lg:w-1/2">
+          <!-- footer about us -->
+          <p class="text-lg leading-relaxed text-white py-8 text-justify">
+              Welcome to <span class="font-bold">Oseni Lukmon & Co.</span> Since 2009, Oseni Lukmon & Co. has been dedicated to providing professional accounting and other related services to various companies, ensuring excellence in every aspect of our work. Our Managing Partner, with over three decades of experience in Audit, Taxation, Investigation, and Debt Recovery, leads a team committed to upholding the highest standards of professionalism and integrity.
+          </p>
+        </div>
+
+        <!-- container -->
+        <div class="flex flex-row justify-evenly items-start lg:w-1/2 lg:justify-center lg:items-center lg:gap-20" >
+           <!-- ending part -->
+        
+          <div class=" py-5">
+          <ul class="flex flex-col gap-2 font-medium text-white">
+            <li class="list-disc hover:text-[#af4265]"><a href="./about.html">About Us</a></li>
+            <li class="list-disc hover:text-[#af4265]"><a href="#">Advertise</a></li>
+            <li class="list-disc hover:text-[#af4265] "><a href="#">Terms & Conditions</a></li>
+            <li class="list-disc hover:text-[#af4265]"><a href="#">Privacy Policy</a></li>
+            <li class="list-disc hover:text-[#af4265]"><a href="#">Careers</a></li>
+          </ul>
+        </div>
+
+        <div class=" py-5">
+          <ul class="flex flex-col gap-2 font-medium text-white">
+            <li class="list-disc hover:text-[#af4265]"><a href="./home.html">Home</a></li>
+            <li class="list-disc hover:text-[#af4265]"><a href="#">Testimonials</a></li>
+            <li class="list-disc hover:text-[#af4265]"><a href="./our-services.html">Our services</a></li>
+            <li class="list-disc hover:text-[#af4265]"><a href="./portfolios.html">Portfolio</a></li>
+            <li class="list-disc hover:text-[#af4265]"><a href="./contact.html">Contact Us</a></li>
+          </ul>
+        </div>
       </div>
+
+       
+      </div>
+      
+      
        
     </footer>
 
      <!-- copyright -->
         <div class="bg-white py-3">
-          <p class="font-medium text-gray-500 text-center ">Copyright © 2024 All Rights Reserved. Oseni Lukmon & co. Powered By Dervac</p>
+          <p class="font-medium text-black text-center ">Copyright © 2024 All Rights Reserved. Oseni Lukmon & co. Powered By Dervac</p>
         </div>
   
     <script src="script.js"></script>
