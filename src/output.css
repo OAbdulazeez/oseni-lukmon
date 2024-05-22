@@ -675,10 +675,6 @@ video {
   margin-top: 0.5rem;
 }
 
-.mt-20 {
-  margin-top: 5rem;
-}
-
 .mt-28 {
   margin-top: 7rem;
 }
@@ -715,6 +711,10 @@ video {
   height: 0px;
 }
 
+.h-1 {
+  height: 0.25rem;
+}
+
 .h-1\/2 {
   height: 50%;
 }
@@ -741,6 +741,26 @@ video {
 
 .h-screen {
   height: 100vh;
+}
+
+.h-5 {
+  height: 1.25rem;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
+.h-12 {
+  height: 3rem;
+}
+
+.h-\[50px\] {
+  height: 50px;
+}
+
+.w-1 {
+  width: 0.25rem;
 }
 
 .w-24 {
@@ -787,9 +807,20 @@ video {
   width: 100%;
 }
 
-.w-fit {
-  width: -moz-fit-content;
-  width: fit-content;
+.w-5 {
+  width: 1.25rem;
+}
+
+.w-10 {
+  width: 2.5rem;
+}
+
+.w-12 {
+  width: 3rem;
+}
+
+.w-\[50px\] {
+  width: 50px;
 }
 
 .max-w-\[300px\] {
@@ -1122,6 +1153,13 @@ video {
   padding-bottom: 2.25rem;
 }
 
+<<<<<<< Updated upstream
+=======
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
+>>>>>>> Stashed changes
 .pb-2 {
   padding-bottom: 0.5rem;
 }
@@ -1170,8 +1208,24 @@ video {
   padding-top: 1.25rem;
 }
 
-.pb-10 {
-  padding-bottom: 2.5rem;
+.pl-10 {
+  padding-left: 2.5rem;
+}
+
+.pl-14 {
+  padding-left: 3.5rem;
+}
+
+.pl-16 {
+  padding-left: 4rem;
+}
+
+.pl-\[100px\] {
+  padding-left: 100px;
+}
+
+.pl-\[120px\] {
+  padding-left: 120px;
 }
 
 .text-left {
@@ -1180,6 +1234,10 @@ video {
 
 .text-center {
   text-align: center;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .text-justify {
@@ -1266,6 +1324,14 @@ video {
   line-height: 1rem;
 }
 
+.text-\[8px\] {
+  font-size: 8px;
+}
+
+.text-\[9px\] {
+  font-size: 9px;
+}
+
 .font-black {
   font-weight: 900;
 }
@@ -1282,6 +1348,10 @@ video {
   font-weight: 600;
 }
 
+.italic {
+  font-style: italic;
+}
+
 .leading-\[20px\] {
   line-height: 20px;
 }
@@ -1296,6 +1366,14 @@ video {
 
 .leading-relaxed {
   line-height: 1.625;
+}
+
+.leading-3 {
+  line-height: .75rem;
+}
+
+.leading-4 {
+  line-height: 1rem;
 }
 
 .text-\[\#0b0b0b\] {
@@ -1371,12 +1449,6 @@ video {
 .shadow-xl {
   --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.shadow-2xl {
-  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
-  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -1481,10 +1553,13 @@ video {
     margin-bottom: 3rem;
   }
 
+<<<<<<< Updated upstream
   .lg\:ml-24 {
     margin-left: 6rem;
   }
 
+=======
+>>>>>>> Stashed changes
   .lg\:ml-5 {
     margin-left: 1.25rem;
   }
@@ -1652,9 +1727,13 @@ video {
     padding-top: 2rem;
   }
 
-  .lg\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
+  .lg\:text-left {
+    text-align: left;
+  }
+
+  .lg\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .lg\:text-5xl {
@@ -1674,17 +1753,16 @@ video {
     font-size: 30px;
   }
 
+  .lg\:text-\[32px\] {
+    font-size: 32px;
+  }
+
   .lg\:text-\[40px\] {
     font-size: 40px;
   }
 
   .lg\:text-\[60px\] {
     font-size: 60px;
-  }
-
-  .lg\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
   }
 
   .lg\:leading-\[60px\] {
